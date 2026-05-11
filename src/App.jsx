@@ -13,7 +13,7 @@ import { AuthProvider } from './context/AuthContext';
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter>
         <Routes>
           {/* Public auth routes — always reachable so the header Login button works */}
           <Route path="/login" element={<Login />} />
